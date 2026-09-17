@@ -59,7 +59,7 @@ void CompositeShape::add(std::unique_ptr<Shape> shape)
 void CompositeShape::print() const
 {
     Point center = getCenter();
-    std::cout << std::setprecision(2) << std::fixed << "\n[" << getName() << ", (" << 
+    std::cout << std::setprecision(2) << std::fixed << "\n[" << getName() << ", (" <<
         center.x_ << ", " << center.y_ << "), " << getArea() << ":";
     for (size_t i = 0; i < shape_.size(); i++) {
         std::cout << "\n";
